@@ -1,0 +1,41 @@
+Share
+
+
+You said:
+how to create .gitignore file during first commit and remove target during commit in java springboot application?
+ChatGPT said:
+To create a .gitignore file during the first commit and ensure that the target/ directory is ignored in a Java Spring Boot application, follow these steps:
+
+1. Create a .gitignore File
+Before making the first commit, create a .gitignore file in the root of your Spring Boot project.
+
+sh
+Copy
+Edit
+touch .gitignore
+2. Add Rules to .gitignore
+Open the .gitignore file and add the following rules to exclude compiled files, logs, and dependencies:
+
+gitignore
+Copy
+Edit
+# Ignore target directory
+target/
+
+# Ignore IDE-specific files
+.idea/
+*.iml
+*.class
+
+# Ignore Maven and Gradle files
+.mvn/
+.gradle/
+*.log
+
+# Ignore dependency folders
+node_modules/
+vendor/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
